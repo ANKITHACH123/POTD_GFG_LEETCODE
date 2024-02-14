@@ -7,8 +7,9 @@ void bfs(vector<int>adj[],int node,vector<int>&vi){
     while(!q.empty())
     {
         int t=q.front();
+        cout<<top<<" ";
         q.pop();
-        for(auto it:adj[top]){
+        for(auto it:adj[t]){
             if(!vi[it]){
                 q.push(it);
                 vi[it]=1;
